@@ -1,7 +1,7 @@
 {
   "name": "metasync-site/nova-has-many-searchable",
   "description": "A Laravel Nova field for searchable has-many relationships",
-  "keywords": ["laravel", "nova4", "field", "has-many", "searchable", "metasyncSite"],
+  "keywords": ["laravel", "nova", "field", "has-many", "searchable"],
   "license": "MIT",
   "require": {
     "php": "^8.2",
@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "MetasynSite\\NovaHasManySearchable\\": "src/"
+      "MetasyncSite\\NovaHasManySearchable\\": "src/"
     }
   },
   "autoload-dev": {
@@ -33,8 +33,5 @@
     "sort-packages": true
   },
   "minimum-stability": "dev",
-  "prefer-stable": true,
-  "scripts": {
-    "test": "vendor/bin/phpunit"
-  }
+  "prefer-stable": true
 }

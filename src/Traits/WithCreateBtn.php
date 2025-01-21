@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MetasyncSite\HasManySearchable\Traits;
+namespace MetasyncSite\NovaHasManySearchable\Traits;
 
 trait WithCreateBtn
 {

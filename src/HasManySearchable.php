@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace MetasyncSite\NovaHasManySearchable;
 
-use Acme\HasManySearchable\Traits\WithCreateBtn;
 use Exception;
 use Illuminate\Support\Facades\Log;
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Illuminate\Database\Eloquent\Model;
+use MetasyncSite\NovaHasManySearchable\Traits\WithCreateBtn;
 use Throwable;
 
 class HasManySearchable extends Field
