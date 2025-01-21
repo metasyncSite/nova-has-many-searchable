@@ -17,11 +17,6 @@
       "MetasyncSite\\NovaHasManySearchable\\": "src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "MetasyncSite\\NovaHasManySearchable\\Tests\\": "tests/"
-    }
-  },
   "extra": {
     "laravel": {
       "providers": [
