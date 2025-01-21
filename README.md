@@ -19,7 +19,7 @@ composer require metasync-site/nova-has-many-searchable
 ## Usage
 
 ```php
-use Metasync\NovaHasManySearchable\HasManySearchable;
+use MetasyncSite\NovaHasManySearchable\HasManySearchable;
 
 public function fields(NovaRequest $request)
 {
@@ -75,13 +75,8 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover any security vulnerabilities, please email security@metasync.dev
+If you discover any security vulnerabilities, please email metasyncsite@gmail.com
 
 ## Credits
+- [Metasync](https://github.com/metasyncSite)
 
-- [Metasync](https://github.com/metasyncSite/nova-has-many-searchable)
-- [All Contributors](../../contributors)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

@@ -1,7 +1,7 @@
 {
   "name": "metasync-site/nova-has-many-searchable",
   "description": "A Laravel Nova field for searchable has-many relationships",
-  "keywords": ["laravel", "nova", "field", "has-many", "searchable"],
+  "keywords": ["laravel", "nova4", "field", "has-many", "searchable", "metasyncSite"],
   "license": "MIT",
   "require": {
     "php": "^8.2",
