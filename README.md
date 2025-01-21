@@ -69,10 +69,6 @@ HasManySearchable::make('Coupons')
     ->withCreateButton(true, 'Add New Coupon')
 ```
 
-## Contributing
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
 ## Security Vulnerabilities
 
 If you discover any security vulnerabilities, please email metasyncsite@gmail.com
