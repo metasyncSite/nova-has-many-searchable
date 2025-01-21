@@ -1,0 +1,40 @@
+{
+  "name": "metasync-site/nova-has-many-searchable",
+  "description": "A Laravel Nova field for searchable has-many relationships",
+  "keywords": ["laravel", "nova", "field", "has-many", "searchable"],
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^11.0",
+    "laravel/nova": "^4.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0",
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MetasynSite\\NovaHasManySearchable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MetasyncSite\\NovaHasManySearchable\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MetasyncSite\\NovaHasManySearchable\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
