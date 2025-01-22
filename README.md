@@ -2,6 +2,9 @@
 
 A Laravel Nova field that provides a searchable interface for has-many relationships with the ability to create new related resources.
 
+
+![screenshot of the search relations tool](./screenshot.png)
+
 ## Requirements
 
 - PHP 8.2+

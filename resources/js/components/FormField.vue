@@ -1,9 +1,8 @@
 <template>
   <DefaultField :field="field" :errors="errors">
     <template #field>
-      <div class="relative hasManySearchable">
+      <div class="tw-relative hasManySearchable">
         <div class="flex flex-col space-y-2">
-          <!-- Create Button -->
           <div v-if="field.showCreateButton" class="mb-2">
             <button
                 type="button"
@@ -21,15 +20,14 @@
             />
           </div>
 
-          <!-- Main input container -->
           <div class="flex flex-wrap p-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900">
             <div v-for="selected in selectedItems"
                  :key="selected.value"
-                 class="inline-flex items-center px-2 py-1 m-1 text-sm rounded
+                 class="inline-flex items-center px-2 py-1 tw-m-1 text-sm rounded
                                     bg-gray-100 dark:bg-gray-800">
               <span class="text-gray-900 dark:text-white">{{ selected.label }}</span>
               <button @click.prevent="removeItem(selected)"
-                      class="ml-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                      class="tw-ml-1 tw-text-gray-500 tw-hover:text-gray-700 tw-dark:text-gray-400 tw-dark:hover:text-gray-200">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -39,13 +37,13 @@
                    v-model="search"
                    @focus="showDropdown = true"
                    placeholder="Search..."
-                   class="flex-grow min-w-[150px] p-1 outline-none border-none
+                   class="tw-w-full flex-grow min-w-[150px] p-1 outline-none border-none
                                       bg-transparent text-gray-900 dark:text-white
                                       placeholder-gray-400 dark:placeholder-gray-500" />
           </div>
 
           <div v-if="showDropdown"
-               class="absolute dropDownMenu z-50 w-full mt-1 rounded-lg shadow-lg
+               class="tw-absolute tw-top-full dropDownMenu tw-z-50 w-full mt-1 rounded-lg shadow-lg
                                 bg-white dark:bg-gray-900
                                 border border-gray-300 dark:border-gray-700">
             <div v-for="option in filteredOptions"
@@ -127,7 +125,6 @@ export default {
     onMounted(() => {
       document.addEventListener('click', handleClickOutside)
 
-      // Initialize selected items from field value
       if (props.field.value) {
         selectedItems.value = props.field.value.map(value => {
           const option = props.field.options.find(opt => opt.value === value)
