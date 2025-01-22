@@ -7,6 +7,7 @@ namespace MetasyncSite\NovaHasManySearchable\Traits;
 trait WithCreateBtn
 {
     protected bool $showCreateButton = false;
+
     protected string $createButtonLabel = 'Create New';
 
     public function withCreateButton(bool $show = true, ?string $label = null): static

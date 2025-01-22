@@ -17,9 +17,12 @@ class HasManySearchable extends Field
     use WithCreateBtn;
 
     public $component = 'has-many-searchable';
-    protected $resourceClass;
-    protected $foreignKey;
+
     public $displayCallback;
+
+    private mixed $resourceClass;
+
+    private ?string $foreignKey;
 
     public function __construct($name, $attribute = null, $resolveCallback = null)
     {
@@ -73,14 +76,12 @@ class HasManySearchable extends Field
                         return null;
                     }
 
-                    $label = '';
                     if ($this->displayCallback) {
                         $label = call_user_func($this->displayCallback, $item);
                     } else {
                         $label = $item->{$this->meta['displayField']} ?? '';
                     }
 
-                    // If label is empty, use ID
                     if (empty($label)) {
                         $label = "ID: " . $item->getKey();
                     }
@@ -90,7 +91,7 @@ class HasManySearchable extends Field
                         'label' => $label
                     ];
                 } catch (Throwable $e) {
-                    \Log::error('HasManySearchable display error: ' . $e->getMessage());
+                    Log::error('HasManySearchable display error: ' . $e->getMessage());
 
                     return null;
                 }
@@ -118,7 +119,7 @@ class HasManySearchable extends Field
      *
      * @throws Throwable
      */
-    protected function fillAttributeFromRequest(NovaRequest $request, $requestAttribute, $model, $attribute)
+    protected function fillAttributeFromRequest(NovaRequest $request, $requestAttribute, $model, $attribute): void
     {
         if (!$request->exists($requestAttribute)) {
             return;
