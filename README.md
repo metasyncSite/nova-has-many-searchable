@@ -9,7 +9,7 @@ A Laravel Nova field that provides a searchable interface for has-many relations
 
 - PHP 8.2+
 - Laravel 11.x
-- Laravel Nova 4.x
+- Laravel Nova 4.x / 5.x
 
 ## Installation
 
@@ -17,6 +17,11 @@ You can install the package via composer:
 
 ```bash
 composer require metasync-site/nova-has-many-searchable
+```
+
+### For laravel 4.x
+```bash
+composer require metasync-site/nova-has-many-searchable:v1.0.2
 ```
 
 ## Usage

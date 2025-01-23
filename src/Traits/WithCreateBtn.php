@@ -10,6 +10,12 @@ trait WithCreateBtn
 
     protected string $createButtonLabel = 'Create New';
 
+    /**
+     * @param bool $show
+     * @param string|null $label
+     *
+     * @return $this
+     */
     public function withCreateButton(bool $show = true, ?string $label = null): static
     {
         $this->showCreateButton = $show;
@@ -27,6 +33,9 @@ trait WithCreateBtn
         return $this;
     }
 
+    /**
+     * @return void
+     */
     protected function appendCreateButtonMeta(): void
     {
         $this->withMeta([
@@ -36,9 +45,7 @@ trait WithCreateBtn
         ]);
     }
 
-    /**
-     * Override the parent resolve method
-     */
+    #[\Override]
     public function resolveUsing($callback): static
     {
         parent::resolveUsing($callback);
