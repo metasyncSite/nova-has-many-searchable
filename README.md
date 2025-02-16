@@ -19,11 +19,6 @@ You can install the package via composer:
 composer require metasync-site/nova-has-many-searchable
 ```
 
-### For laravel 4.x
-```bash
-composer require metasync-site/nova-has-many-searchable:v1.0.2
-```
-
 ## Usage
 
 ```php
