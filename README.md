@@ -8,8 +8,8 @@ A Laravel Nova field that provides a searchable interface for has-many relations
 ## Requirements
 
 - PHP 8.2+
-- Laravel 11.x
-- Laravel Nova 4.x / 5.x
+- Laravel 11.x | 12.x
+- Laravel Nova 4.x | 5.x
 
 ## Installation
 
